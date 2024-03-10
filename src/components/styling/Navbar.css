@@ -1,0 +1,14 @@
+.main-nav {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.links-container {
+  display: flex;
+  flex-direction: row;
+  padding-top: 10px;
+  column-gap: 1vw;
+}

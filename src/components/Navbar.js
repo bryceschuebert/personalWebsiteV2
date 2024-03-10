@@ -1,16 +1,18 @@
-// In Navbar.js
 import React from 'react';
+import './styling/Navbar.css';
+import ScrollButton from './ScrollButton';
 
-const Navbar = () => {
+const Navbar = ({ isMainPage }) => {
   return (
-    <nav>
-      <button>Resume</button>
-      {/* Temporarily replace Links with dummy text */}
-      <a href="#about">About</a>
+    <nav className={isMainPage ? 'main-nav' : 'project-nav'}>
+      <div className="links-container">
+        <ScrollButton to="about">ABOUT</ScrollButton>
+        <ScrollButton to="experience">EXPERIENCE</ScrollButton>
+        <ScrollButton to="project">PROJECTS</ScrollButton>
+        <ScrollButton to="contact">CONTACTS</ScrollButton>
+      </div>
     </nav>
   );
 };
 
 export default Navbar;
-
-
